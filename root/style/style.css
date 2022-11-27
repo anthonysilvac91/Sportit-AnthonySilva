@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+/* Estilos generales */
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    border: none;
+    
+}
+
+.btn{
+    background-color: #8B48BF;
+    width: 130px;
+    height: 40px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 13px;
+    
+}
+/* Estilos Header */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.navBar{
+    display: flex;
+} 
+
+.navBar li{
+    margin: 10px;
+    
+}
+
+.navBar li a{
+    color: #242E52;
+    font-size: 13px;
+}
+
+.navBar li a:hover{
+    color: rgba(36, 46, 82, 0.6)
+}
+
+header .btn{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    
+}
+
+/* Estilos Banner */
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.bannerImage{
+    padding: 50px;
+    margin: 10 20px;
+}
+
+.bannerText{
+    padding: 50px;
+    margin: 10 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bannerText h1{
+    color:#232C50;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: right;
+}
+.bannerText p{
+    font-size: 16.56px;
+    text-align: right;
+    margin-top: 20px;
+    color:  #000000;
+    
+}
+
+.banner .btn{
+    margin-top: 20px;
+}
+
+/* Estilos Label */
+
+.label{
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    
+    align-items: center;
+}
+
+.box{
+    width: 50%;
+
+}
+
+.label h2{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 30px 20px 150px;
+   
+    
+    
+}
+
+.label p{
+    padding: 0px 150px 0px 30px;
+   
+}
