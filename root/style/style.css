@@ -132,3 +132,67 @@ header .btn{
     padding: 0px 150px 0px 30px;
    
 }
+
+/* Estilos Tarjetas */
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FAFAFA;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    margin-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.cardText{
+    margin-left: 15px;
+     
+}
+
+.cardText h3{
+    margin-bottom: 20px;
+    margin-top: 8px;
+    color: #323851;
+}
+
+.cardText p{
+    color: #B3B2B7;
+}
+
+
+.cardNumber p{
+    background-color: #8B48BF;
+    width: 69px;
+    height: 43px;
+    border-radius: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+
+/* Estilos Tarjetas Jugador */
+
+.sectionContainer{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.sectionTitle{
+    color: #242E53;
+    font-size: 39px;
+    margin-bottom: 70px;
+}
