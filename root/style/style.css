@@ -17,9 +17,13 @@ ul{
     list-style: none;
 }
 
+p{
+    line-height: 25px;
+}
+
+/* Estilos generales de Botones */
 button{
-    border: none;
-    
+    border: none;   
 }
 
 .btn{
@@ -29,7 +33,30 @@ button{
     border-radius: 50px;
     color: #FFFFFF;
     font-size: 13px;
+}
+
+.btn:hover{
+    background-color: rgba(139, 72, 191, 0.7);
+}
+
+.btnLight{
+    background-color: #FFFFFF;
+    color: #8B48BF;
+}
+
+.btnLight:hover{
+background-color: rgba(250, 250, 250, 0.7);
+}
+
+
+.label{
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
+   
 }
 /* Estilos Header */
 
@@ -104,14 +131,11 @@ header .btn{
     margin-top: 20px;
 }
 
-/* Estilos Label */
+/* Estilos Label 1 */
 
-.label{
-    background-color: #8B48BF;
-    color: #FFFFFF;
-    display: flex;
+.label1{
+    padding: 40px;
     
-    align-items: center;
 }
 
 .box{
@@ -119,7 +143,7 @@ header .btn{
 
 }
 
-.label h2{
+.label1 h2{
     font-size: 36px;
     font-weight: bold;
     padding: 20px 30px 20px 150px;
@@ -128,7 +152,7 @@ header .btn{
     
 }
 
-.label p{
+.label1 p{
     padding: 0px 150px 0px 30px;
    
 }
@@ -148,7 +172,7 @@ header .btn{
 }
 
 .card{
-    width: 50%;
+    width: 600px;
     display: flex;
     margin-top: 30px;
     padding-right: 20px;
@@ -169,6 +193,7 @@ header .btn{
 
 .cardText p{
     color: #B3B2B7;
+    
 }
 
 
@@ -182,13 +207,16 @@ header .btn{
     padding-top: 10px;
     font-weight: bold;
     
+    
 }
 
 /* Estilos Tarjetas Jugador */
 
 .sectionContainer{
-    margin-top: 70px;
-    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sectionTitle{
@@ -196,3 +224,139 @@ header .btn{
     font-size: 39px;
     margin-bottom: 70px;
 }
+
+.playerCardContainer{
+    display: flex;
+    background-color: #FAFAFA;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.playerCard{
+    position: relative;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 20px;
+    
+}
+
+.playerCard img{
+    border-radius: 50px;
+    position: absolute;
+    top: -30px;
+    right: 42%;
+    
+
+}
+
+.playerCard h3{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    
+}
+
+.playerCard p{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #B9B9C1;
+    
+}
+
+/* Estilos Label 2 */
+
+.label2{
+    padding: 64px;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.label2 h2{
+    font-size: 40px;
+    width: 450px;
+    
+}
+
+.label2 .btn{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilos del Footer */
+
+footer{
+    background-color: #1E1E26;
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 54px 85px 0px 85px;
+    
+}
+
+.footerSocial{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center
+    
+}
+
+.footerSocial img{
+    width: 110px;
+}
+
+.footerSocial i{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 5px;
+    
+}
+
+.footerBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    width: 33%;
+   
+
+}
+
+.footerBar li{
+    margin-top: 10px;
+    
+}
+
+.footerBar li a{
+    color: #FFFFFF;
+}
+
+.footerForm{
+    width: 33%;
+    text-align: center;
+    
+}
+
+.footerForm .btn{
+    width: 63px;
+}
+
+.footerForm input{
+    border-radius: 20px;
+    height: 44px;
+    width: 200px;
+}
+
+footer h4{
+    font-size: 12.5px;
+    color: #8c8c94;
+    text-align: right;
+    padding-bottom: 20px;
+    margin-right: 160px;
+}
+
+
+
+
