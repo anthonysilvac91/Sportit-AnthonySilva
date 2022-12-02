@@ -97,11 +97,13 @@ header .btn{
     display: flex;
     justify-content: space-around;
     padding: 50px;
+    
 }
 
 .bannerImage{
     padding: 50px;
     margin: 10 20px;
+    
 }
 
 .bannerText{
@@ -115,7 +117,7 @@ header .btn{
 
 .bannerText h1{
     color:#232C50;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 50px;
     text-align: right;
 }
@@ -174,6 +176,7 @@ header .btn{
 .card{
     width: 600px;
     display: flex;
+    flex-direction: column;
     margin-top: 30px;
     padding-right: 20px;
     padding-left: 20px;
@@ -193,10 +196,15 @@ header .btn{
 
 .cardText p{
     color: #B3B2B7;
+    padding-left: 63px;
     
 }
 
-
+.cardNumber{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .cardNumber p{
     background-color: #8B48BF;
     width: 69px;
@@ -206,6 +214,8 @@ header .btn{
     color: #FFFFFF;
     padding-top: 10px;
     font-weight: bold;
+    margin-right: 20px;
+    
     
     
 }
@@ -359,4 +369,172 @@ footer h4{
 
 
 
+
+/* Estilos Responsive */
+
+@media screen and (max-width: 480px) { 
+
+    .hiddenMobile{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column;
+        
+    }
+
+    .bannerImage{
+        padding: 0px;
+        margin-bottom: 100px;
+        
+    }
+
+    .bannerImage img{
+        width: 400px;
+           
+    }
+
+    .bannerText{
+        width: 400px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .label{
+        flex-direction: column;
+        background-color: #3CDDF3;
+        margin: 0px;
+        
+
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .label1{
+        padding: 0px;
+        margin-bottom: 75px;
+    }
+
+    .label1 h2{
+        padding: 40px 20px 0px 20px;
+        margin-bottom: 50px;
+
+    }
+
+    .label1 p{
+        width: 480px;
+        padding: 0px 20px 40px 20px;
+    }
+
+
+
+    .cardContainer{
+        padding: 0px;
+        margin: 0px;
+    }
+    .card{
+        flex-direction: column;
+        width: 480px;
+        padding: 0px 0px 0px 34px;
+        
+    }
+
+
+    .cardNumber{
+        display: flex;
+        align-items: center;
+        background-color: rgba(139, 72, 191, 0.3);
+        border-radius: 30px 0px 0px 30px;
+        margin-bottom: 31px;
+    }
+
+    .cardNumber h3{
+        margin-left: 20px;
+    }
+
+    .cardText p{
+        padding: 0px 28px 0px 0px;
+    }
+
+
+    .playerCardContainer{
+        width: 480px;
+        padding: 0px 17px 0px 17px;
+    }
+
+    .label2{
+        margin-top: 58px;
+        padding: 0px
+    }
+
+    .label2 h2{
+        width: 480px;
+        padding: 40px 85px 50px;
+        text-align: center;
+    }
+
+    .btnLight{
+        background-color: #232C50;
+        color:#FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        margin-bottom: 40px;
+    }
+
+    .footerContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 480px;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .footerForm{
+        width: 480px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .footerForm input{
+        width: 308px;
+        margin-right: 9px;
+    }
+
+    .footerBar{
+        width: 480px;
+        padding: 0px 80px 0px;
+        margin-bottom: 20px;
+    }
+
+    .footerSocial{
+        width: 480px;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+
+    }
+
+    .footerSocial img{
+        margin-top: 20px;
+    }
+
+    .social{
+        margin-top: 50px;
+    }
+
+    .social i{
+        margin: 30px;
+        
+    }
+
+    footer h4{
+        text-align: center;
+        padding: 0px 0px 50px 0px;
+        margin: 0px;
+        
+        
+    }
+
+ }
 
