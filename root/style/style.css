@@ -56,7 +56,10 @@ background-color: rgba(250, 250, 250, 0.7);
     justify-content: space-around;
     align-items: center;
     
-   
+}
+
+.hiddenDesktop{
+    display: none;
 }
 /* Estilos Header */
 
@@ -95,37 +98,45 @@ header .btn{
 
 .banner{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 50px;
     
+}
+
+.bannerImage img{
+    width: 540px;
+
 }
 
 .bannerImage{
-    padding: 50px;
-    margin: 10 20px;
-    
+    margin-right: 50px;
+    margin-left: 20px;
 }
 
 .bannerText{
-    padding: 50px;
-    margin: 10 20px;
+    width: 540px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    margin-left: 50px;
+    margin-right: 20px;
 }
 
 .bannerText h1{
     color:#232C50;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 50px;
     text-align: right;
+    padding-left: 20px;
 }
+
 .bannerText p{
     font-size: 16.56px;
     text-align: right;
     margin-top: 20px;
     color:  #000000;
+    padding-left: 20px
     
 }
 
@@ -188,7 +199,7 @@ header .btn{
      
 }
 
-.cardText h3{
+.cardNumber h3{
     margin-bottom: 20px;
     margin-top: 8px;
     color: #323851;
@@ -373,24 +384,42 @@ footer h4{
 /* Estilos Responsive */
 
 @media screen and (max-width: 480px) { 
+    
 
+    /* Estilos Generales */
     .hiddenMobile{
         display: none;
     }
 
+    .hiddenDesktop{
+        display: block;
+    }
+
+    /* Estilos Header */
+
+    .barMobile i{
+        font-size: 40px;
+
+    }
+
+    /* Estilos Banner */
     .banner{
         flex-direction: column;
-        
+        align-items: center;
+       margin: 0;
+       padding: 0;
     }
 
     .bannerImage{
-        padding: 0px;
-        margin-bottom: 100px;
+       padding: 0;
+       margin: 0;
         
     }
 
     .bannerImage img{
         width: 400px;
+        margin: 0px 0px 50px 0px;
+        padding: 0;
            
     }
 
@@ -400,10 +429,19 @@ footer h4{
         padding: 0px;
     }
 
+    .bannerText h1{
+        padding: 0px 0px 0px 10px;
+        margin: 50px 0px 0px 0px;
+        
+        
+    }
+
+    /* Estilos Label1 */
+
     .label{
         flex-direction: column;
         background-color: #3CDDF3;
-        margin: 0px;
+        
         
 
     }
@@ -414,7 +452,8 @@ footer h4{
 
     .label1{
         padding: 0px;
-        margin-bottom: 75px;
+        margin-bottom: 45px;
+        margin-top: 40px;
     }
 
     .label1 h2{
@@ -429,10 +468,11 @@ footer h4{
     }
 
 
-
+    /* Estilos Cards */
     .cardContainer{
         padding: 0px;
         margin: 0px;
+        background-color: #FFFFFF;
     }
     .card{
         flex-direction: column;
@@ -444,25 +484,40 @@ footer h4{
 
     .cardNumber{
         display: flex;
-        align-items: center;
+       align-items: center;
         background-color: rgba(139, 72, 191, 0.3);
         border-radius: 30px 0px 0px 30px;
-        margin-bottom: 31px;
+       
     }
 
     .cardNumber h3{
-        margin-left: 20px;
+        margin: 0px 0px 0px 20px;
+        font-size: 16px;
     }
 
     .cardText p{
         padding: 0px 28px 0px 0px;
     }
 
-
+    /* Estilos Tarjeta Jugador */
     .playerCardContainer{
         width: 480px;
         padding: 0px 17px 0px 17px;
     }
+    .sectionContainer{
+        margin: 60px 0px 0px 0px;
+        padding: 0;
+    }
+    .sectionTitle h2{
+        
+        font-size: 39px;
+    }
+
+    .playerCard h3{
+        font-size: 16px;
+    }
+
+    /* Estilos Label 2 */
 
     .label2{
         margin-top: 58px;
@@ -470,9 +525,14 @@ footer h4{
     }
 
     .label2 h2{
-        width: 480px;
-        padding: 40px 85px 50px;
+
+        width: 324px;
+        height: 192px;
+        padding: 0px 20px 10px 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         text-align: center;
+        
     }
 
     .btnLight{
@@ -481,7 +541,8 @@ footer h4{
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
         margin-bottom: 40px;
     }
-
+    
+    /* Estilos Footer */
     .footerContainer{
         flex-direction: column-reverse;
         align-items: center;
@@ -508,10 +569,15 @@ footer h4{
         margin-bottom: 20px;
     }
 
+    .footerBar ul li{
+        margin: 20px;
+    }
+
     .footerSocial{
         width: 480px;
         flex-direction: column-reverse;
         margin-bottom: 50px;
+        
 
     }
 
@@ -520,7 +586,7 @@ footer h4{
     }
 
     .social{
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .social i{
